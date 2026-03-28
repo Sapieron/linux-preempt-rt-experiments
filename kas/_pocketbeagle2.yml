@@ -1,0 +1,33 @@
+header:
+  version: 15
+
+machine: pocketbeagle2
+
+distro: poky
+
+repos:
+  poky:
+    url: https://github.com/yoctoproject/poky.git
+    branch: scarthgap
+    path: sources/external/poky
+    layers:
+      meta:
+      meta-poky:
+      meta-yocto-bsp:
+
+  meta-ti:
+    url: https://git.yoctoproject.org/git/meta-ti
+    branch: scarthgap
+    path: sources/external/meta-ti
+    layers:
+      meta-beagle:
+      meta-ti-bsp:
+
+  meta-arm:
+    url: https://git.yoctoproject.org/git/meta-arm
+    branch: scarthgap
+    path: sources/external/meta-arm
+    layers:
+      meta-arm:
+      meta-arm-bsp:
+      meta-arm-toolchain:
