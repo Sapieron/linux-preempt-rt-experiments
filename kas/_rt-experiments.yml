@@ -1,0 +1,10 @@
+header:
+  version: 15
+
+distro: rt-distro
+
+repos:
+  meta-rt-experiments:
+    path: sources/meta-rt-experiments
+    layers:
+      .:

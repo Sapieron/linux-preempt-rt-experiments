@@ -3,8 +3,6 @@ header:
 
 machine: pocketbeagle2
 
-distro: poky
-
 repos:
   poky:
     url: https://github.com/yoctoproject/poky.git
